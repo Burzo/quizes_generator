@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+    <div class="container" id="contain-draggable">
+        <ul class="drag-list">
+            <li id="Miha" class="drag-words" data-name="Miha">Miha</li>
+            <li id="Bojana" class="drag-words" data-name="Bojana">Bojana</li>
+            <li id="Tereza" class="drag-words" data-name="Tereza">Tereza</li>
+            <li id="Naključna beseda" class="drag-words" data-name="Naključna beseda">Naključna beseda</li>
+            <li id="Barbora" class="drag-words" data-name="Barbora">Barbora</li>
+        </ul>
+        <ul class="drop-list">
+            <li class="drop-sentence">Ime mi je <span data-target="Miha" class="drop-sentence__target"></span>. Učim se češčino.</li>
+            <li class="drop-sentence">Ime mi je <span data-target="Bojana" class="drop-sentence__target"></span>. Učim češčino.</li>
+            <li class="drop-sentence">Ime mi je <span data-target="Tereza" class="drop-sentence__target"></span>. Živim v Češki republiki.</li>
+            <li class="drop-sentence">Pravijo mi <span data-target="Naključna beseda" class="drop-sentence__target"></span>. Gre za daljši stavek, ker me zanima kaj se zgodi. Ga moram še podaljšati očitno.</li>
+            <li class="drop-sentence">Ime mi je <span data-target="Barbora" class="drop-sentence__target"></span>. Sem Terezina sestra.</li>
+        </ul>
+    </div>
+{% endblock %}

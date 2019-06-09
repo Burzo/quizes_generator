@@ -1,0 +1,8 @@
+{% extends "admin/change_form.html" %}
+{% block submit_buttons_bottom %}
+    <div class="">
+        <button class="btn btn-danger">Custom Button</button>
+    </div>
+
+    {{ block.super }}
+{% endblock %}
