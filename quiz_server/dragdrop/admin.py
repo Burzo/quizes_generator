@@ -4,14 +4,14 @@ from django import forms
 from django.urls import path
 from django.http import HttpResponse
 
-from .models import Word
+from .models import Quiz
 
 from . import views
 
 
 
 # Najprej nared custom admin site
-class WordAdmin(admin.ModelAdmin):
+class QuizAdmin(admin.ModelAdmin):
     
 
     def get_urls(self):
@@ -38,7 +38,7 @@ class WordAdmin(admin.ModelAdmin):
 
 
 
-admin.site.register(Word, WordAdmin)
+admin.site.register(Quiz, QuizAdmin)
 
 
 # -- https://medium.com/@adriennedomingus/adding-custom-views-or-templates-to-django-admin-740640cc6d42 ---
